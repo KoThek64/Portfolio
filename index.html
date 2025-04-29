@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Section À propos -->
+    <section id="about">
+        <h1>Bonjour ! Je suis Mattys Lachaise</h1>
+        <p>Étudiant en BUT Informatique au sein de l'IUT de Nantes</p>
+        <img src="images/data.jpg" alt="Photo de Mattys Lachaise">
+        <p>J'ai 19 ans et je suis actuellement en première année de BUT Informatique.<br> Je suis actuellement à la recherche d’une alternance pour mettre un pied dans le monde professionnel, participer à des projets concrets et continuer à progresser.<br> J’ai envie de relever de vrais défis et d’appliquer mes compétences en développement tout en apprenant davantage sur le terrain.</p>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects">
+        <h2>Exemple de projets</h2>
+        <div class="project-list">
+            <label class="project-item">
+                Projet Quadtree (Projet universitaire)
+                <input type="checkbox" class="toggle-details">
+                <div class="project-details">
+                    <img src="images/projet1.png" alt="Projet 1">
+                    <p>J'ai programmé avec un camarade un jeu en golang qui avait pour but de fonctionner avec un terrain généré en quadtree, nous avions certaines  instructions comme créer des extensions qui pouvaient par exemple empêcher le joueur d'aller sur un bloc d'eau, générer le terrain aléatoirement, etc...</p>
+                    <p>PLUS D'INFORMATION SUR MON GITHUB</p>
+                </div>
+            </label>
+            <label class="project-item">
+                Projet messagerie en peer to peer (Projet personnel)
+                <input type="checkbox" class="toggle-details">
+                <div class="project-details">
+                    <img src="images/projets2.png" alt="Projet 2">
+                    <p>Ceci est un serveur de messagerie instantanée en Go qui permet à plusieurs utilisateurs de se connecter via TCP et d'échanger des messages en temps réel. Lorsqu'un client se connecte, il doit entrer son nom, qui est ensuite affiché à côté de chaque message qu'il envoie. Le serveur gère plusieurs connexions simultanées grâce aux goroutines, en diffusant les messages reçus à tous les autres utilisateurs connectés. Les connexions sont gérées efficacement, et lorsqu'un utilisateur se déconnecte, sa connexion est supprimée du système.</p>
+                    <p>PLUS D'INFORMATION SUR MON GITHUB</p>
+                </div>
+            </label>
+            <label class="project-item">
+                Projet Suivi et gestion des dépenses (Projet personnel)
+                <input type="checkbox" class="toggle-details">
+                <div class="project-details">
+                    <img src="images/Capture_projet_3.png" alt="Projet 3-1">
+                    <p>Ce projet est un projet personnel que j'ai eu récemment, vu que je suis étudiant je dois contrôler mes dépenses car je ne suis pas riche, j'ai donc eu l'idée de créer une application pour gérer mes dépenses, le projet n'est pas encore finit car je viens à peine de le commencer mais j'ai d'autres idées pour la suite, comme une interface visuelle, une mémoire des dépenses etc...</p>
+                    <p>PLUS D'INFORMATION SUR MON GITHUB</p>
+                </div>
+            </label>
+            <h4>Si vous voulez plus de projets, j'ai un github dans la partie contact de ce portfolio, tous mes projets et tout ce que j'ai fait depuis le début de mon année en BUT Informatique y sont.</h4>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <img src="images/html_icon.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="images/CSS_icon.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <img src="images/Kotlin_icon.png" alt="Kotlin">
+                <p>Kotlin</p>
+            </div>
+            <div class="skill">
+                <img src="images/Golang_icon.png" alt="Golang">
+                <p>Golang</p>
+            </div>
+            <div class="skill">
+                <img src="images/SQL_icon.png" alt="SQL">
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <img src="images/Linux_icon.png" alt="Linux">
+                <p>Linux</p>
+            </div>
+            <div class="skill">
+                <img src="images/Python_icon.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <!-- Ajoute d'autres compétences ici -->
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>mattys.contact@gmail.com</p>
+        <p>Téléchargez mon CV et ma lettre de motivation :</p>
+        <ul>
+            <li><a href="Doc/CV%20Mattys%20Lachaise-2.pdf" download>Mon CV</a></li>
+            <li><a href="Doc/Lettre%20de%20Motivation.pdf" download>Ma Lettre de Motivation</a></li>
+        </ul>
+
+        <h3>Mes autres contacts :</h3>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/mattys-lachaise-b16617360?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/KoThek64/Projets_Mattys_Lachaise" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/matts.l_/" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>2025 Mattys Lachaise</p>
+</footer>
+
+</body>
+</html>

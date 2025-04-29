@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #333;
+    --background-color: #fafafa;
+    --card-background: #fff;
+    --hover-color: #0056b3;
+    --light-grey: #f5f5f5;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+/* Header avec un fond coloré */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+ul {
+    list-style-type: none; /* Supprime les puces */
+    padding-left: 0; /* Supprime le retrait par défaut */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+main {
+    padding-top: 80px;
+}
+
+h2 {
+    margin-bottom: 30px; /* Espace sous chaque titre */
+}
+
+section h2 + * {
+    margin-top: 20px; /* Espace au-dessus du contenu qui suit le h2 */
+}
+
+/* Sections */
+section {
+    background-color: var(--light-grey);
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin: 30px auto;
+    text-align: center;
+}
+
+#about img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Projets */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    width: 80%; /* Limite la largeur des projets */
+    margin: 0 auto; /* Centrer les projets */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.project-item {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* S'assure que chaque projet ne dépasse pas */
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-details {
+    display: none;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item:nth-child(1) .project-details img {
+    width: 25%;
+    height: auto;
+}
+
+.project-item:nth-child(2) .project-details img {
+    width: 60%;
+    height: auto;
+}
+
+.toggle-details {
+    display: none;
+}
+
+.toggle-details:checked + .project-details {
+    display: block;
+}
+
+/* Compétences */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
