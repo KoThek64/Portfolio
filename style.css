@@ -32,8 +32,8 @@ header {
 }
 
 ul {
-    list-style-type: none; /* Supprime les puces */
-    padding-left: 0; /* Supprime le retrait par défaut */
+    list-style-type: none;
+    padding-left: 0;
 }
 
 nav ul {
@@ -62,11 +62,11 @@ main {
 }
 
 h2 {
-    margin-bottom: 30px; /* Espace sous chaque titre */
+    margin-bottom: 30px;
 }
 
 section h2 + * {
-    margin-top: 20px; /* Espace au-dessus du contenu qui suit le h2 */
+    margin-top: 20px;
 }
 
 /* Sections */
@@ -92,8 +92,8 @@ section {
     gap: 30px;
     opacity: 0;
     animation: fadeIn 1s ease forwards;
-    width: 80%; /* Limite la largeur des projets */
-    margin: 0 auto; /* Centrer les projets */
+    width: 80%;
+    margin: 0 auto;
 }
 
 @keyframes fadeIn {
@@ -112,7 +112,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%; /* S'assure que chaque projet ne dépasse pas */
+    width: 100%;
 }
 
 .project-item:hover {
@@ -135,7 +135,7 @@ section {
 }
 
 .project-item:nth-child(2) .project-details img {
-    width: 60%;
+    width: 30%;
     height: auto;
 }
 
